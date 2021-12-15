@@ -2,9 +2,237 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>HTML Academy: Кэт энерджи-каталог</title>
 </head>
 <body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="#" alt="Кэт энерджи" width="34" height="38">
+    </a>
 
+    <nav class="page-header__nav page-nav">
+      <button class="page-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="site-list">
+        <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#">Каталог продукции</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="catalog-main">
+    <h1 class="catalog-main__title title title--size-l">Каталог продукции</h1>
+    <section>
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog-main__product-list product-list">
+        <li class="product-list__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="img/catalog/chicken-500.png" alt="Cat Energy PRO 500 г со вкусом курицы" width="140" height="112">
+          </a>
+          <a class="product__link" href="#">
+            <h3 class="product__title title title--size-m">Cat energy pro</h3>
+          </a>
+          <span class="product__weight">500г</span>
+          <dl class="product__features product-features">
+            <dt class="product-features__term">Масса</dt>
+            <dl class="product-features__definition">500г</dl>
+            <dt class="product-features__term">Вкус</dt>
+            <dl class="product-features__definition">Курица</dl>
+            <dt class="product-features__term">Цена</dt>
+            <dl class="product-features__definition">700р</dl>
+          </dl>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="product-list__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="img/catalog/chicken-1000.png" alt="Cat Energy PRO 1000 г со вкусом курицы" width="140" height="112">
+          </a>
+          <a class="product__link" href="#">
+            <h3 class="product__title title title--size-m">Cat energy pro</h3>
+          </a>
+          <span class="product__weight">1000г</span>
+          <dl class="product__features product-features">
+            <dt class="product-features__term">Масса</dt>
+            <dl class="product-features__definition">1000г</dl>
+            <dt class="product-features__term">Вкус</dt>
+            <dl class="product-features__definition">Курица</dl>
+            <dt class="product-features__term">Цена</dt>
+            <dl class="product-features__definition">1000р</dl>
+          </dl>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="product-list__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="img/catalog/fish-500.png" alt="Cat Energy PRO 500 г со вкусом рыбы" width="140" height="112">
+          </a>
+          <a class="product__link" href="#">
+            <h3 class="product__title title title--size-m">Cat energy pro</h3>
+          </a>
+          <span class="product__weight">500г</span>
+          <dl class="product__features product-features">
+            <dt class="product-features__term">Масса</dt>
+            <dl class="product-features__definition">500г</dl>
+            <dt class="product-features__term">Вкус</dt>
+            <dl class="product-features__definition">Рыба</dl>
+            <dt class="product-features__term">Цена</dt>
+            <dl class="product-features__definition">700р</dl>
+          </dl>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="product-list__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="img/catalog/fish-1000.png" alt="Cat Energy PRO 1000 г со вкусом рыбы" width="140" height="112">
+          </a>
+          <a class="product__link" href="#">
+            <h3 class="product__title title title--size-m">Cat energy pro</h3>
+          </a>
+          <span class="product__weight">1000г</span>
+          <dl class="product__features product-features">
+            <dt class="product-features__term">Масса</dt>
+            <dl class="product-features__definition">700г</dl>
+            <dt class="product-features__term">Вкус</dt>
+            <dl class="product-features__definition">Рыба</dl>
+            <dt class="product-features__term">Цена</dt>
+            <dl class="product-features__definition">1000р</dl>
+          </dl>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="product-list__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="img/catalog/buckwheat-500.png" alt="Cat Energy PRO 500 г со вкусом гречки" width="140" height="112">
+          </a>
+          <a class="product__link" href="#">
+            <h3 class="product__title title title--size-m">Cat energy pro</h3>
+          </a>
+          <span class="product__weight">500г</span>
+          <dl class="product__features product-features">
+            <dt class="product-features__term">Масса</dt>
+            <dl class="product-features__definition">500г</dl>
+            <dt class="product-features__term">Вкус</dt>
+            <dl class="product-features__definition">Гречка</dl>
+            <dt class="product-features__term">Цена</dt>
+            <dl class="product-features__definition">700р</dl>
+          </dl>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="product-list__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="img/catalog/buckwheat-1000.png" alt="Cat Energy PRO 1000 г со вкусом гречки" width="140" height="112">
+          </a>
+          <a class="product__link" href="#">
+            <h3 class="product__title title title--size-m">Cat energy pro</h3>
+          </a>
+          <span class="product__weight">1000г</span>
+          <dl class="product__features product-features">
+            <dt class="product-features__term">Масса</dt>
+            <dl class="product-features__definition">1000г</dl>
+            <dt class="product-features__term">Вкус</dt>
+            <dl class="product-features__definition">Гречка</dl>
+            <dt class="product-features__term">Цена</dt>
+            <dl class="product-features__definition">1000р</dl>
+          </dl>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="product-list__item product">
+          <a class="product__link" href="#">
+            <img class="product__img" src="img/catalog/rice-500.png" alt="Cat Energy PRO 500 г со вкусом риса" width="140" height="112">
+          </a>
+          <a class="product__link" href="#">
+            <h3 class="product__title title title--size-m">Cat energy pro</h3>
+          </a>
+          <span class="product__weight">500г</span>
+          <dl class="product__features product-features">
+            <dt class="product-features__term">Масса</dt>
+            <dl class="product-features__definition">500г</dl>
+            <dt class="product-features__term">Вкус</dt>
+            <dl class="product-features__definition">Рис</dl>
+            <dt class="product-features__term">Цена</dt>
+            <dl class="product-features__definition">700р</dl>
+          </dl>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="load-more">
+      <h2 class="visually-hidden">Загрузить еще товаров</h2>
+      <span class="load-more__text title title--size-m">Показать еще 100500 товаров</span>
+      <span class="load-more__text">На самом деле вкусов гораздо больше!</span>
+      <button class="button" type="button">Показать все</button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Дополнительные товары</h2>
+      <ul class="catalog-main__extra-list extra-list">
+        <li class="extra-list__item">
+          <h3 class="extra-list__title title title--size-m">Сахорозаменитель</h3>
+          <span class="extra-list__feature">1 упаковка (100 г)</span>
+          <span class="extra-list__feature">200 Р.</span>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="extra-list__item">
+          <h3 class="extra-list__title title title--size-m">Питьевая вода</h3>
+          <span class="extra-list__feature">5 литров</span>
+          <span class="extra-list__feature">50 Р.</span>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="extra-list__item">
+          <h3 class="extra-list__title title title--size-m">Молоко</h3>
+          <span class="extra-list__feature">1 литр</span>
+          <span class="extra-list__feature">100 Р.</span>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+        <li class="extra-list__item">
+          <h3 class="extra-list__title title title--size-m">Витамины</h3>
+          <span class="extra-list__feature">1 упаковка (30 г)</span>
+          <span class="extra-list__feature">300 Р.</span>
+          <a class="product__link button button--accent" href="#">Заказать</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="special-offer">
+      <p class="special-offer__text">
+        Закажите все<br>
+        и получите чехол для<br>
+        кота в подарок!
+      </p>
+    </section>
+
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__address">
+      <h2 class="visually-hidden">Адрес</h2>
+      <p class="title title-size-s">
+        приглашаем<br>
+        к сотрудничеству<br>
+        дилеров!
+      </p>
+      <address>
+        ул. Большая<br>
+        Конюшенная, д. 19/8<br>
+        Санкт-Петербург
+      </address>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="img/map.svg" alt="Карта" width="320" height="362">
+    </section>
+    <footer class="page-footer__footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <a class="page-footer__logo logo">
+        <img class="page-footer__logo-text" src="img/logo/logo-title.svg" alt="Кэт энерджи" width="101" height="18">
+      </a>
+      <ul class="socials-list">
+        <li class="socials-list__item"><a class="socials-list__link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li class="socials-list__item"><a class="socials-list__link" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li class="socials-list__item"><a class="socials-list__link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      </ul>
+      <a class="page-footer__academy-link" href="#">
+        <span>HTML Academy</span>
+      </a>
+    </footer>
+  </footer>
 </body>
 </html>
