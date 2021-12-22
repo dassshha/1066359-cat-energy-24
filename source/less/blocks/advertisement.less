@@ -1,0 +1,17 @@
+.advertisement {
+  background-color: @basic-green-opacity;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg/bg-adverisement-cat.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
