@@ -23,8 +23,8 @@
     </nav>
   </header>
   <main class="form-main">
-    <h1 class="form-main__title title title--size-l">Подбор программы</h1>
-    <p class="form-main__text title title--size-s">
+    <h1 class="form-main__title">Подбор программы</h1>
+    <p class="form-main__text">
       Заполните анкету, и мы подберем
       программу питания для вашего кота
     </p>
@@ -48,19 +48,19 @@
         <input class="form__input" type="radio" name="services" id="advice" value="Совет">
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend title title--size-m">Контактные данные(владельца кота)</legend>
+        <legend class="form__legend">Контактные данные(владельца кота)</legend>
         <label class="form__label" for="email">E-mail:</label>
         <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
         <label class="form__label" for="phone">Телефон:</label>
         <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend title title--size-m">Комментарий</legend>
+        <legend class="form__legend">Комментарий</legend>
         <label class="visually-hidden" for="comment">Комментарий</label>
-        <textarea name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__input" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend title title--size-m">Дополнительно</legend>
+        <legend class="form__legend">Дополнительно</legend>
         <label class="form__label" for="sugar-substitute">Cахарозаменитель</label>
         <input class="form__input" type="checkbox" name="extra" id="sugar-substitute" value="Cахарозаменитель" checked>
         <label class="form__label" for="water">Питьевая вода</label>
@@ -75,14 +75,14 @@
     </form>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__address">
+    <section class="page-footer__header">
       <h2 class="visually-hidden">Адрес</h2>
-      <p class="title title-size-s">
+      <p class="page-footer__cooperation">
         приглашаем<br>
         к сотрудничеству<br>
         дилеров!
       </p>
-      <address>
+      <address class="page-footer__address">
         ул. Большая<br>
         Конюшенная, д. 19/8<br>
         Санкт-Петербург
