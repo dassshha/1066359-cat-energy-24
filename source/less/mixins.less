@@ -2,3 +2,19 @@
   font-size: @size;
   line-height: @line-height;
 }
+
+.center(@tablet-padding:30px; @desktop-padding: 110px) {
+  min-width: @mobile-width;
+  max-width: @desktop-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 @tablet-padding;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 @desktop-padding;
+  }
+}

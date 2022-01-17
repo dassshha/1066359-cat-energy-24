@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -27,12 +28,15 @@
     <main class="page-main">
       <h1 class="page-main__title">Функциональное питание для котов</h1>
 
-      <section class="advertisement">
-        <h2 class="visually-hidden">Реклама функционального питания для котов</h2>
-        <p class="advertisement__text">Занялся собой? Займись котом!</p>
-        <img src="img/advert-img.png" alt="Упаковка функционального питания для котов со вкусом курицы" width="280" height="270">
-        <button class="advertisement__button button button--accent" type="button">Подобрать программу</button>
-      </section>
+      <div class="advertisement__wrapper">
+        <section class="advertisement">
+          <h2 class="advertisement__title">Функциональное питание для котов</h2>
+          <p class="advertisement__text">Занялся собой? Займись котом!</p>
+          <img class="advertisement__img" src="img/advert-img.png" alt="Упаковка функционального питания для котов со вкусом курицы" width="280" height="270">
+          <button class="advertisement__button button button--accent" type="button">Подобрать программу</button>
+        </section>
+      </div>
+
 
       <section class="services">
         <h2 class="visually-hidden">Каталог услуг</h2>
@@ -103,29 +107,37 @@
       </section>
 
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто<br>
-          заменив свой обычный корм на Cat Energy<br>
-          Slim. Отличный результат без изнуряющих<br>
-          тренировок! При этом он не менял своих<br>
-          привычек и по-прежнему спит по 16 часов<br>
-          в день.
-        </p>
-        <dl class="example__list">
-          <dt class="example__item-term">снижение веса</dt>
-          <dd class="example__item-definition">5 кг</dd>
-          <dt class="example__item-term">затрачено времени</dt>
-          <dd class="example__item-definition">60 дней</dd>
-        </dl>
-        <span class="example__price">Затраты на питание: 15 000 РУБ. </span>
-        <img class="example__img" src="img/cat/cat-fat.png" alt="Толстый кот" width="677" height="520">
-        <img class="example__img" src="img/cat/cat-skinny.png" alt="Худой кот" width="545" height="520">
-        <button class="example__button" type="button">Было</button>
-        <div class="example__slider">
-          <div class="example__slider-toggle"></div>
+        <div class="example__wrapper">
+          <div class="example__wrapper-text">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто<br>
+              заменив свой обычный корм на Cat Energy<br>
+              Slim. Отличный результат без изнуряющих<br>
+              тренировок! При этом он не менял своих<br>
+              привычек и по-прежнему спит по 16 часов<br>
+              в день.
+            </p>
+            <div class="example__wrapper-stats">
+              <dl class="example__list">
+                <dt class="example__item-term">снижение веса</dt>
+                <dd class="example__item-definition">5 кг</dd>
+                <dt class="example__item-term">затрачено времени</dt>
+                <dd class="example__item-definition">60 дней</dd>
+              </dl>
+              <span class="example__price">Затраты на питание: 15 000 РУБ. </span>
+            </div>
+          </div>
+          <div class="example__wrapper-img">
+            <img class="example__img" src="img/cat/cat-fat.png" alt="Толстый кот" width="677" height="520">
+            <img class="example__img" src="img/cat/cat-skinny.png" alt="Худой кот" width="545" height="520">
+            <button class="example__button" type="button">Было</button>
+            <div class="example__slider">
+              <div class="example__slider-toggle"></div>
+            </div>
+            <button class="example__button" type="button">Стало</button>
+          </div>
         </div>
-        <button class="example__button" type="button">Стало</button>
       </section>
     </main>
     <footer class="page-footer">
@@ -149,7 +161,7 @@
       <footer class="page-footer__footer">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="page-footer__logo logo">
-          <img class="page-footer__logo-text" src="img/logo/logo-title.svg" alt="Кэт энерджи" width="101" height="18">
+          <img class="page-footer__logo-text" src="#" alt="Кэт энерджи" width="101" height="18">
         </a>
         <ul class="socials-list">
           <li class="socials-list__item"><a class="socials-list__link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
