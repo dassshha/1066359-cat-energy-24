@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи-каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -155,43 +156,46 @@
       </ul>
     </section>
 
-    <section>
-      <h2 class="catalog-main__sub-title">Дополнительные товары</h2>
-      <ul class="catalog-main__extra-list extra-list">
-        <li class="extra-list__item">
-          <h3 class="extra-list__title">Сахорозаменитель</h3>
-          <span class="extra-list__feature">1 упаковка (100 г)</span>
-          <span class="extra-list__feature">200 Р.</span>
-          <a class="product__link button button--accent" href="#">Заказать</a>
-        </li>
-        <li class="extra-list__item">
-          <h3 class="extra-list__title">Питьевая вода</h3>
-          <span class="extra-list__feature">5 литров</span>
-          <span class="extra-list__feature">50 Р.</span>
-          <a class="product__link button button--accent" href="#">Заказать</a>
-        </li>
-        <li class="extra-list__item">
-          <h3 class="extra-list__title">Молоко</h3>
-          <span class="extra-list__feature">1 литр</span>
-          <span class="extra-list__feature">100 Р.</span>
-          <a class="product__link button button--accent" href="#">Заказать</a>
-        </li>
-        <li class="extra-list__item">
-          <h3 class="extra-list__title">Витамины</h3>
-          <span class="extra-list__feature">1 упаковка (30 г)</span>
-          <span class="extra-list__feature">300 Р.</span>
-          <a class="product__link button button--accent" href="#">Заказать</a>
-        </li>
-      </ul>
-    </section>
+    <div class="catalog-main__extra-offer-wrapper">
+      <section class="extra-products catalog-main__extra-products">
+        <h2 class="catalog-main__sub-title">Дополнительные товары</h2>
+        <ul class="catalog-main__extra-list extra-list">
+          <li class="extra-list__item">
+            <h3 class="extra-list__title">Сахорозаменитель</h3>
+            <span class="extra-list__feature">1 упаковка (100 г)</span>
+            <span class="extra-list__feature">200 Р.</span>
+            <a class="product__link button button--accent" href="#">Заказать</a>
+          </li>
+          <li class="extra-list__item">
+            <h3 class="extra-list__title">Питьевая вода</h3>
+            <span class="extra-list__feature">5 литров</span>
+            <span class="extra-list__feature">50 Р.</span>
+            <a class="product__link button button--accent" href="#">Заказать</a>
+          </li>
+          <li class="extra-list__item">
+            <h3 class="extra-list__title">Молоко</h3>
+            <span class="extra-list__feature">1 литр</span>
+            <span class="extra-list__feature">100 Р.</span>
+            <a class="product__link button button--accent" href="#">Заказать</a>
+          </li>
+          <li class="extra-list__item">
+            <h3 class="extra-list__title">Витамины</h3>
+            <span class="extra-list__feature">1 упаковка (30 г)</span>
+            <span class="extra-list__feature">300 Р.</span>
+            <a class="product__link button button--accent" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="special-offer">
-      <p class="special-offer__text">
-        Закажите все<br>
-        и получите чехол для<br>
-        кота в подарок!
-      </p>
-    </section>
+      <section class="special-offer catalog-main__special-offer">
+        <p class="special-offer__text">
+          Закажите все<br>
+          и получите чехол для<br>
+          кота в подарок!
+        </p>
+      </section>
+    </div>
+
 
   </main>
   <footer class="page-footer">

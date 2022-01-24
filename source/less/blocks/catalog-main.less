@@ -1,3 +1,7 @@
+.catalog-main {
+  .center();
+}
+
 .catalog-main__title {
   .set-font(36px; 36px);
   font-family: @title-font;
@@ -6,4 +10,25 @@
 .catalog-main__sub-title {
   .set-font(24px; 24px);
   font-family: @title-font;
+}
+
+.catalog-main__extra-offer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.catalog-main__special-offer {
+  @media (min-width: @desktop-width) {
+    grid-column: 4/5;
+  }
+}
+
+.catalog-main__extra-products {
+  @media (min-width: @desktop-width) {
+    grid-column: 1/4;
+  }
 }
