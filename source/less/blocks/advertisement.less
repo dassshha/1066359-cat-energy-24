@@ -1,14 +1,23 @@
 .advertisement {
 
-  .center();
+  position: relative;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 70px 132px auto auto;
+  &::before {
+    grid-area: 1/1/4/2;
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg/bg-adverisement-cat.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 
-  @media (min-width: @mobile-width + 1px) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
+    @media (min-width: @mobile-width + 1px) {
+      display: none;
+    }
   }
 }
 
@@ -50,6 +59,7 @@
 }
 
 .advertisement__button {
+  display: block;
   grid-area: 5/1/6/2;
 
   @media (min-width: @mobile-width + 1px) {
@@ -58,23 +68,15 @@
 }
 
 .advertisement__wrapper {
-  position: relative;
 
-  &::before {
-    grid-area: 1/1/4/2;
-    position: absolute;
-    content: "";
-    background-image: url("../img/bg/bg-adverisement-cat.png");
-    background-repeat: no-repeat;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
+  .center();
 
-    @media (min-width: @mobile-width + 1px) {
-      display: none;
-    }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 70px 132px auto auto;
+
+  @media (min-width: @mobile-width + 1px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
   }
 }

@@ -9,3 +9,44 @@
   .set-font(24px; 26px);
   font-family: @title-font;
 }
+
+.form__fieldset {
+  border: none;
+}
+
+.form__program-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.form__list {
+  list-style-type: none;
+}
+
+.form__item {
+  display: flex;
+}
+
+.form__input:not([type="checkbox"]):not([type="radio"]) {
+  flex-grow: 1;
+}
+
+.form__list--extra {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px 80px;
+  }
+}
