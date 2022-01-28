@@ -1,9 +1,17 @@
 .program-features {
-  margin-bottom: 50px;
   .center();
+  margin-bottom: 50px;
 }
 
 .program-features__title {
   .set-font(36px; 40px);
   font-family: @title-font;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    .set-font(60px; 60px);
+    margin-bottom: 80px;
+  }
 }
