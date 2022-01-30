@@ -31,7 +31,7 @@
     </p>
     <form class="form-main__form form" method="get" action="https://echo.htmlacademy.ru">
       <div class="form__program-wrapper">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__parameters">
           <legend class="visually-hidden">Параметры кота</legend>
           <ul class="form__list">
             <li class="form__item">
@@ -48,7 +48,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__services">
           <legend class="visually-hidden">Услуги</legend>
           <ul class="form__list">
             <li class="form__item">
@@ -66,7 +66,7 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__contacts">
         <legend class="form__legend">Контактные данные(владельца кота)</legend>
           <ul class="form__list form__program-wrapper">
             <li class="form__item">
@@ -79,7 +79,7 @@
             </li>
           </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__comment">
         <legend class="form__legend">Комментарий</legend>
         <ul class="form__list">
           <li class="form__item">
@@ -88,7 +88,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__extra">
         <legend class="form__legend">Дополнительно</legend>
         <ul class="form__list form__list--extra">
           <li class="form__item">
@@ -109,8 +109,10 @@
           </li>
         </ul>
       </fieldset>
-      <button class="form__button button button--accent" type="submit">Отправить заявку</button>
-      <span class="form__warning">* — Обязательные поля</span>
+      <div class="form__button-wrapper">
+        <button class="form__button button button--accent" type="submit">Отправить заявку</button>
+        <span class="form__warning">* — Обязательные поля</span>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
