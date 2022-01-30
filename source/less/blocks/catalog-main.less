@@ -5,6 +5,20 @@
 .catalog-main__title {
   .set-font(36px; 36px);
   font-family: @title-font;
+  font-weight: 400;
+  margin-top: 27px;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    .set-font(60px; 60px);
+    margin-top: 64px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 74px;
+    margin-bottom: 84px;
+  }
 }
 
 .catalog-main__sub-title {
@@ -32,3 +46,4 @@
     grid-column: 1/4;
   }
 }
+
