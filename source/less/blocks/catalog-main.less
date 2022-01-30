@@ -24,14 +24,27 @@
 .catalog-main__sub-title {
   .set-font(24px; 24px);
   font-family: @title-font;
+  font-weight: 400;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    .set-font(36px;36px);
+    margin-bottom: 80px;
+  }
 }
 
 .catalog-main__extra-offer-wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 35px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 79px;
+    margin-bottom: 86px;
   }
 }
 
