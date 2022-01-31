@@ -1,12 +1,26 @@
 .form-main__title {
   .set-font(36px; 36px);
   font-family: @title-font;
+  font-weight: 400;
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    .set-font(60px;60px);
+    margin-bottom: 55px;
+  }
 }
 
 .form-main__text {
   .set-font(14px; 18px);
   font-family: @title-font;
+  font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    .set-font(20px;30px);
+    margin-bottom: 66px;
+  }
 }
 
 .form-main {
