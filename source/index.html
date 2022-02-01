@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -154,13 +154,29 @@
           </div>
           <div class="example__wrapper-center-img">
             <div class="example__wrapper-img">
-              <img class="example__img visually-hidden" src="img/cat/cat-fat.png" alt="Толстый кот" width="592" height="511">
-              <img class="example__img visually-hidden" src="img/cat/cat-skinny.png" alt="Худой кот" width="545" height="520">
-              <button class="example__button" type="button">Было</button>
-              <div class="example__slider">
-                <div class="example__slider-toggle"></div>
+              <div class="example__pic-container">
+                <div class="example__pic-fat-cat-container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat/cat-fat-tablet.png 1x, img/cat/cat-fat-tablet@2x.png 2x">
+                    <img class="example__img" src="img/cat/cat-fat-mobile.png" alt="Толстый кот"
+                    srcset="img/cat/cat-fat-mobile.png 1x, img/cat/cat-fat-mobile@2x.png 2x">
+                  </picture>
+                </div>
+                <div class="example__pic-skiny-cat-container">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/cat/cat-skinny-tablet.png 1x, img/cat/cat-skinny-tablet@2x.png 2x">
+                    <img class="example__img" src="img/cat/cat-skinny-tablet.png" alt="Худой кот"
+                         srcset="img/cat/cat-skinny-tablet.png 1x, img/cat/cat-skinny-tablet.png 2x">
+                  </picture>
+                </div>
               </div>
-              <button class="example__button" type="button">Стало</button>
+              <div class="example__slider-wrapper">
+                <button class="example__button" type="button">Было</button>
+                <div class="example__slider">
+                  <div class="example__slider-toggle"></div>
+                </div>
+                <button class="example__button" type="button">Стало</button>
+              </div>
             </div>
           </div>
         </div>
@@ -205,7 +221,6 @@
         </a>
       </footer>
     </footer>
-    <div class="my-div"></div>
     <script type="module" src="js/menu.js"></script>
   </body>
 </html>
