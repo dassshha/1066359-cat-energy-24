@@ -41,6 +41,9 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .form__item {
@@ -80,8 +83,8 @@
   }
 }
 
-.form__parameters,
-.form__services {
+.form__fieldset--parameters,
+.form__fieldset--services {
   margin-bottom: 47px;
 
   @media (min-width: @tablet-width) {
@@ -89,8 +92,8 @@
   }
 }
 
-.form__contacts,
-.form__comment {
+.form__fieldset--contacts,
+.form__fieldset--comment {
   margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
@@ -98,7 +101,7 @@
   }
 }
 
-.form__extra {
+.form__fieldset--extra {
   margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
@@ -110,7 +113,7 @@
   }
 }
 
-.form__comment .form__input {
+.form__input--comment {
   height: 150px;
 
   @media (min-width: @tablet-width) {
@@ -156,5 +159,89 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 82px;
+  }
+}
+
+.form__item--letter,
+.form__item--phone {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.form__input {
+  border: 1px solid #e7e7e7;
+  padding: 13px 15px;
+}
+
+.form__label--radio,
+.form__label--check {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 55px;
+  }
+}
+
+/* Mark */
+.form__input--radio,
+.form__input--check {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid @slider-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form__input--radio {
+  border-radius: 50%;
+}
+
+.form__input:checked + .form__input--radio::after {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: @basic-green;
+  content: "";
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+.form__input:checked + .form__input--check::after {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon/checked.svg");
+  background-repeat: no-repeat;
+  content: "";
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 18px;
   }
 }

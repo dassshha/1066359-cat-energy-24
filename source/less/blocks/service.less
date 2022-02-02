@@ -46,6 +46,28 @@
   font-family: @title-font;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
+  padding-right: 47px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 60px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon/arrow.svg");
+    width: 32px;
+    height: 10px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .service__circle {
@@ -91,5 +113,29 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 23px;
     margin-right: 0;
+  }
+}
+
+.service__img--skinny-cat {
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.service__img--fat-cat {
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 56px;
   }
 }
