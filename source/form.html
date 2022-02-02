@@ -55,16 +55,25 @@
           <legend class="visually-hidden">Услуги</legend>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input" type="radio" name="services" id="slimming" value="Похудение" checked>
-              <label class="form__label" for="slimming">Похудение</label>
+              <label class="form__label form__label--radio">
+                <input class="form__input visually-hidden" type="radio" name="services" value="Похудение" checked>
+                <div class="form__input--radio"></div>
+                Похудение
+              </label>
             </li>
             <li class="form__item">
-              <input class="form__input" type="radio" name="services" id="weight-gain" value="Набор массы">
-              <label class="form__label" for="weight-gain">Набор массы</label>
+              <label class="form__label form__label--radio">
+              <input class="form__input visually-hidden" type="radio" name="services"  value="Набор массы">
+                <div class="form__input--radio"></div>
+              Набор массы
+              </label>
             </li>
             <li class="form__item">
-              <input class="form__input" type="radio" name="services" id="advice" value="Совет">
-              <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+              <label class="form__label form__label--radio">
+              <input class="form__input visually-hidden" type="radio" name="services"  value="Совет">
+                <div class="form__input--radio"></div>
+              Не знаю (Нужен ваш совет)
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -113,20 +122,32 @@
         <legend class="form__legend">Дополнительно</legend>
         <ul class="form__list form__list--extra">
           <li class="form__item">
-            <input class="form__input" type="checkbox" name="extra" id="sugar-substitute" value="Cахарозаменитель" checked>
-            <label class="form__label" for="sugar-substitute">Cахарозаменитель</label>
+            <label class="form__label form__label--check">
+            <input class="form__input visually-hidden" type="checkbox" name="extra" value="Cахарозаменитель" checked>
+              <div class="form__input--check"></div>
+            Cахарозаменитель
+            </label>
           </li>
           <li class="form__item">
-            <input class="form__input" type="checkbox" name="extra" id="water" value="Питьевая вода">
-            <label class="form__label" for="water">Питьевая вода</label>
+            <label class="form__label form__label--check">
+            <input class="form__input visually-hidden" type="checkbox" name="extra" value="Питьевая вода">
+              <div class="form__input--check"></div>
+            Питьевая вода
+            </label>
           </li>
           <li class="form__item">
-            <input class="form__input" type="checkbox" name="extra" id="milk" value="Молоко">
-            <label class="form__label" for="milk">Молоко</label>
+            <label class="form__label form__label--check" >
+            <input class="form__input visually-hidden" type="checkbox" name="extra"  value="Молоко">
+              <div class="form__input--check"></div>
+            Молоко
+            </label>
           </li>
           <li class="form__item">
-            <input class="form__input" type="checkbox" name="extra" id="vitamins" value="Витамины">
-            <label class="form__label" for="vitamins">Витамины</label>
+            <label class="form__label form__label--check" >
+            <input class="form__input visually-hidden" type="checkbox" name="extra" value="Витамины">
+              <div class="form__input--check"></div>
+            Витамины
+            </label>
           </li>
         </ul>
       </fieldset>
