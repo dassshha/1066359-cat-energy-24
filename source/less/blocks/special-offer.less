@@ -2,6 +2,24 @@
   position: relative;
   height: 289px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon/gift.svg");
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    top: 55px;
+    margin: 0 auto;
+    width: 78px;
+    height: 80px;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 82px;
+    }
+  }
+
   &::before {
     position: absolute;
     content: "";
