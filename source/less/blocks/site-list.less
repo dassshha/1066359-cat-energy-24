@@ -4,12 +4,21 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  top: 0;
+
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
     margin-right: -15px;
+    width: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: 110px;
+    z-index: 2;
   }
 }
 
