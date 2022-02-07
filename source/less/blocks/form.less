@@ -245,3 +245,13 @@
     height: 18px;
   }
 }
+
+.form__list--contacts {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
